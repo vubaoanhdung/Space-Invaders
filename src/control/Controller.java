@@ -33,6 +33,11 @@ public class Controller implements KeyListener, ActionListener, GameObserver {
     private View view;
 
     /**
+     * The frame to hold the panel which display the remaining invaders
+     */
+    private View remainInvaders;
+
+    /**
      * Create a view object, and have the view display the initial welcome message.
      */
     public void start() {
@@ -65,6 +70,9 @@ public class Controller implements KeyListener, ActionListener, GameObserver {
             gameControl = game;
             gameInfo = game;
             gameInfo.addObserver(this); // this is passed in as a GameObserver
+            remainInvaders = new View(WIDTH/2, HEIGHT/2);
+            remainInvaders.setLocation(WIDTH+1, HEIGHT/2);
+            remainInvaders.setVisible(true);
             view.showNewGameView(gameInfo, this); // this is passed in as a KeyListener
             gameControl.start();
         } else if (actionCommand.equals("savescore")) {
@@ -105,6 +113,7 @@ public class Controller implements KeyListener, ActionListener, GameObserver {
                 break;
             case (KeyEvent.VK_ESCAPE):
                 gameControl.togglePaused();
+                remainInvaders.setVisible(false);
                 break;
             default:
                 // ignore other keys
