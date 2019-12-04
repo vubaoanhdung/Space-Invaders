@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CMPT270_A6:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CMPT270_A6_jar</output-path>
+    <root id="archive" name="CMPT270_A6.jar">
+      <element id="module-output" name="CMPT270_A6" />
+    </root>
+  </artifact>
+</component>
