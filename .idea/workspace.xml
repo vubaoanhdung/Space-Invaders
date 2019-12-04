@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8468e17-b361-4ba7-9916-065769487131" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/remainInvadersWindow/remainInvadersFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/remainInvadersWindow/remainInvadersPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/remainInvadersWindow/InvadersCountPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CMPT270_A6/control/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CMPT270_A6/control/Controller$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CMPT270_A6/control/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CMPT270_A6/control/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CMPT270_A6/model/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CMPT270_A6/model/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CMPT270_A6/model/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CMPT270_A6/model/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPT270_A6/model/GameInfoProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CMPT270_A6/model/GameInfoProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPT270_A6/remainInvadersWindow/remainInvadersFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPT270_A6/remainInvadersWindow/remainInvadersPanel.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/control/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/control/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/GameInfoProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/GameInfoProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/remainInvadersWindow/remainInvadersFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/remainInvadersWindow/InvadersCountFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/remainInvadersWindow/remainInvadersPanel.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +85,7 @@
       <workItem from="1575348733170" duration="51000" />
       <workItem from="1575348790218" duration="773000" />
       <workItem from="1575349627749" duration="1458000" />
-      <workItem from="1575418047583" duration="7113000" />
+      <workItem from="1575418047583" duration="13154000" />
     </task>
     <servers />
   </component>

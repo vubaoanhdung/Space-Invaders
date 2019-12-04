@@ -34,7 +34,7 @@ public class Game implements GameControl, GameInfoProvider {
     /** The object to represent the player of the game. */
     protected Player player;
 
-    /** The object to represent a laser shot by the player. */
+    /** The list of lasers */
     protected List<Laser> laserList;
 
     /** The list of the invaders. */
