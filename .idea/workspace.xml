@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="CMPT270_A6:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e8468e17-b361-4ba7-9916-065769487131" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/GameInfoProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/GameInfoProvider.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +85,7 @@
       <workItem from="1575349627749" duration="1458000" />
       <workItem from="1575418047583" duration="23600000" />
       <workItem from="1575471483072" duration="6412000" />
-      <workItem from="1575478568335" duration="27000" />
+      <workItem from="1575478568335" duration="1027000" />
     </task>
     <servers />
   </component>
