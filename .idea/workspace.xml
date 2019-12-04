@@ -2,15 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8468e17-b361-4ba7-9916-065769487131" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/remainInvadersWindow/remainInvadersFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/remainInvadersWindow/remainInvadersPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPT270_A6/control/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CMPT270_A6/control/Controller$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPT270_A6/control/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CMPT270_A6/control/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPT270_A6/model/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CMPT270_A6/model/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CMPT270_A6/model/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CMPT270_A6/model/Player.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/control/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/control/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Player.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,7 +79,11 @@
       <option name="presentableId" value="Default" />
       <updated>1575244635395</updated>
       <workItem from="1575244637921" duration="1240000" />
-      <workItem from="1575337268314" duration="7554000" />
+      <workItem from="1575337268314" duration="8547000" />
+      <workItem from="1575348733170" duration="51000" />
+      <workItem from="1575348790218" duration="773000" />
+      <workItem from="1575349627749" duration="1458000" />
+      <workItem from="1575418047583" duration="7113000" />
     </task>
     <servers />
   </component>

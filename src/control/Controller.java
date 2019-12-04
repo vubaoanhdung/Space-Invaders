@@ -16,6 +16,7 @@ import model.GameControl;
 import model.GameObserver;
 import gameResults.GameResult;
 import gameResults.HighScores;
+import remainInvadersWindow.*;
 
 /**
  * The class to start the space invaders game. It is also the controller in the
@@ -35,7 +36,7 @@ public class Controller implements KeyListener, ActionListener, GameObserver {
     /**
      * The frame to hold the panel which display the remaining invaders
      */
-    private View remainInvaders;
+    private remainInvadersFrame f;
 
     /**
      * Create a view object, and have the view display the initial welcome message.
@@ -44,6 +45,7 @@ public class Controller implements KeyListener, ActionListener, GameObserver {
         PropertiesDiskStorage.setFileName("SpaceInvaders.properties");
         view = new View(WIDTH, HEIGHT);
         view.showWelcomeView(this); // this is passed in as an ActionListener
+        f = new remainInvadersFrame();
     }
 
     /**
@@ -66,13 +68,11 @@ public class Controller implements KeyListener, ActionListener, GameObserver {
     public void actionPerformed(ActionEvent event) {
         String actionCommand = event.getActionCommand();
         if (actionCommand.equals("newgame")) {
+            f.setVisible(true);
             Game game = new Game(WIDTH, HEIGHT);
             gameControl = game;
             gameInfo = game;
             gameInfo.addObserver(this); // this is passed in as a GameObserver
-            remainInvaders = new View(WIDTH/2, HEIGHT/2);
-            remainInvaders.setLocation(WIDTH+1, HEIGHT/2);
-            remainInvaders.setVisible(true);
             view.showNewGameView(gameInfo, this); // this is passed in as a KeyListener
             gameControl.start();
         } else if (actionCommand.equals("savescore")) {
@@ -113,7 +113,7 @@ public class Controller implements KeyListener, ActionListener, GameObserver {
                 break;
             case (KeyEvent.VK_ESCAPE):
                 gameControl.togglePaused();
-                remainInvaders.setVisible(false);
+                f.setVisible(false);
                 break;
             default:
                 // ignore other keys

@@ -25,6 +25,9 @@ public class Player extends GameObject {
     /** How frequently (in terms of ticks) the player is to change image. */
     public static final int CHANGE_FREQ = 0;
 
+    public final long firingInterval;
+    public static long lastFire;
+
     /**
      * Initialize the player.
      */
@@ -34,6 +37,7 @@ public class Player extends GameObject {
         height = HEIGHT;
         lives = INITIAL_NUM_LIVES;
         score = 0;
+        firingInterval = 500;
     }
 
     /**
@@ -59,10 +63,19 @@ public class Player extends GameObject {
      * If canFire, fire a laser.
      */
     public void fire() {
-        if (game.laser == null) {
+        if (game.laserList == null) {
+            lastFire = System.currentTimeMillis();
             int laserX = x + (width - Laser.WIDTH) / 2;
             int laserY = y - Laser.HEIGHT;
             game.addLaser(new Laser(laserX, laserY, game));
+        }
+        else {
+            if (System.currentTimeMillis() - lastFire >= firingInterval) {
+                lastFire = System.currentTimeMillis();
+                int laserX = x + (width - Laser.WIDTH) / 2;
+                int laserY = y - Laser.HEIGHT;
+                game.addLaser(new Laser(laserX, laserY, game));
+            }
         }
     }
 
