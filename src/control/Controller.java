@@ -143,7 +143,7 @@ public class Controller implements KeyListener, ActionListener, GameObserver {
      */
     public void gameChanged() {
         if (gameInfo.isOver()) {
-            invadersCountFrame.setVisible(false);
+            invadersCountFrame.setVisible(false); // when the game is over, make the new window disappear
             final Controller thisController = this;
             Timer t = new Timer(2500, new ActionListener() {
                 public void actionPerformed(ActionEvent e) {

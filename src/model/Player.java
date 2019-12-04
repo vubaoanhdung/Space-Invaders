@@ -76,6 +76,7 @@ public class Player extends GameObject {
             game.addLaser(new Laser(laserX, laserY, game));
         }
         else {
+            // add a laser once every 0.5 seconds
             if (System.currentTimeMillis() - lastFire >= firingInterval) {
                 lastFire = System.currentTimeMillis();
                 int laserX = x + (width - Laser.WIDTH) / 2;
