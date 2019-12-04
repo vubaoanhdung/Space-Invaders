@@ -1,27 +1,33 @@
+/*
+Damon Vu
+11261393
+bav965
+ */
+
 package remainInvadersWindow;
 
 import model.GameInfoProvider;
-import model.GameObject;
 import model.GameObserver;
 import util.PropertiesDiskStorage;
 import view.GraphicsPanel;
-import view.ImageCache;
-
-import javax.swing.*;
 import java.awt.*;
-import java.awt.image.BufferedImage;
 import java.util.List;
 
 public class InvadersCountPanel extends GraphicsPanel implements GameObserver {
     private GameInfoProvider gameInfo;
-    private int remainInvaders;
     private List<String> imageNames;
-    BufferedImage currentImage;
+    private String currentImage;
+    private int imageIndex;
+    private int remainInvadersCount;
 
 
     public InvadersCountPanel(GameInfoProvider gameInfo) {
         this.gameInfo = gameInfo;
         setDoubleBuffered(true);
+        imageNames = PropertiesDiskStorage.getInstance().getProperties("invader");
+        imageIndex = 1;
+        currentImage = imageNames.get(imageIndex);
+        remainInvadersCount = gameInfo.getRemainInvaders();
     }
     /**
      * When the game changes, repaint
@@ -38,12 +44,16 @@ public class InvadersCountPanel extends GraphicsPanel implements GameObserver {
         bufferedGraphics.setPaint(Color.BLACK);
         bufferedGraphics.fillRect(0, 0, getWidth(), getHeight());
 
-//        for (String imageName : imageNames)
-//            drawImage(object.getX(), object.getY(), object.getWidth(), object.getHeight(),
-//                    object.getCurrentImageName(), bufferedGraphics);
+        if (gameInfo.getRemainInvaders() != remainInvadersCount){
+            imageIndex = (imageIndex + 1) % imageNames.size();
+            currentImage = imageNames.get(imageIndex);
+            remainInvadersCount = gameInfo.getRemainInvaders();
+        }
+        drawImage(120, 30, 150, 150,
+                currentImage, bufferedGraphics);
 
         bufferedGraphics.setPaint(Color.GREEN);
-        drawString(100, 250, "Remaining Invaders: "+ gameInfo.getRemainInvaders(),
+        drawString(100, 250, "Remaining Invaders: "+ remainInvadersCount,
                 15, bufferedGraphics);
 
     }

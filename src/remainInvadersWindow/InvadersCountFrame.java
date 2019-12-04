@@ -1,13 +1,14 @@
+/*
+Damon Vu
+11261393
+bav965
+ */
+
 package remainInvadersWindow;
 
 import model.GameInfoProvider;
-import view.GameInfoPanel;
-import view.GamePanel;
-import view.ViewPanel;
 
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.KeyListener;
 
 public class InvadersCountFrame extends JFrame{
     public static final int DEFAULT_WIDTH = 800;

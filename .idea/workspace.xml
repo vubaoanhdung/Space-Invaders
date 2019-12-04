@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e8468e17-b361-4ba7-9916-065769487131" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CMPT270_A6/control/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CMPT270_A6/control/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/control/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/control/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/remainInvadersWindow/InvadersCountFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/remainInvadersWindow/InvadersCountFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/remainInvadersWindow/InvadersCountPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/remainInvadersWindow/InvadersCountPanel.java" afterDir="false" />
     </list>
@@ -79,7 +76,8 @@
       <workItem from="1575348733170" duration="51000" />
       <workItem from="1575348790218" duration="773000" />
       <workItem from="1575349627749" duration="1458000" />
-      <workItem from="1575418047583" duration="23294000" />
+      <workItem from="1575418047583" duration="23600000" />
+      <workItem from="1575471483072" duration="2598000" />
     </task>
     <servers />
   </component>
