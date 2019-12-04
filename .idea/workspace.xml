@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8468e17-b361-4ba7-9916-065769487131" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/control/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/control/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/remainInvadersWindow/InvadersCountPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/remainInvadersWindow/InvadersCountPanel.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +76,7 @@
       <workItem from="1575348790218" duration="773000" />
       <workItem from="1575349627749" duration="1458000" />
       <workItem from="1575418047583" duration="23600000" />
-      <workItem from="1575471483072" duration="4339000" />
+      <workItem from="1575471483072" duration="5956000" />
     </task>
     <servers />
   </component>
