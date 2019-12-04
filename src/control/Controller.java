@@ -40,7 +40,8 @@ public class Controller implements KeyListener, ActionListener, GameObserver {
     private View view;
 
     /**
-     * The frame to hold the panel which display the remaining invaders
+     * The frame to hold the panel which display the invader images as well as the number of
+     * remaining invaders
      */
     private InvadersCountFrame invadersCountFrame;
 
@@ -77,7 +78,7 @@ public class Controller implements KeyListener, ActionListener, GameObserver {
             gameControl = game;
             gameInfo = game;
             gameInfo.addObserver(this); // this is passed in as a GameObserver
-            invadersCountFrame = new InvadersCountFrame(gameInfo);
+            invadersCountFrame = new InvadersCountFrame(gameInfo); // create a new window beside the game window
             view.showNewGameView(gameInfo, this); // this is passed in as a KeyListener
             gameControl.start();
         } else if (actionCommand.equals("savescore")) {
@@ -142,6 +143,7 @@ public class Controller implements KeyListener, ActionListener, GameObserver {
      */
     public void gameChanged() {
         if (gameInfo.isOver()) {
+            invadersCountFrame.setVisible(false);
             final Controller thisController = this;
             Timer t = new Timer(2500, new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
