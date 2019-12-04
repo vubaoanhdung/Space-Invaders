@@ -1,6 +1,7 @@
 package remainInvadersWindow;
 
 import model.GameInfoProvider;
+import model.GameObject;
 import model.GameObserver;
 import util.PropertiesDiskStorage;
 import view.GraphicsPanel;
@@ -12,23 +13,39 @@ import java.awt.image.BufferedImage;
 import java.util.List;
 
 public class InvadersCountPanel extends GraphicsPanel implements GameObserver {
-    public static final int DEFAULT_WIDTH = 800;
-    public static final int DEFAULT_HEIGHT = 600;
-
     private GameInfoProvider gameInfo;
-    private String remainInvaders;
+    private int remainInvaders;
     private List<String> imageNames;
     BufferedImage currentImage;
 
 
     public InvadersCountPanel(GameInfoProvider gameInfo) {
-        JPanel invadersCountPanel = new JPanel();
-        setBackground(Color.BLACK);
         this.gameInfo = gameInfo;
-        imageNames = PropertiesDiskStorage.getInstance().getProperties("invader");
-        currentImage = ImageCache.getInstance().getImage(imageNames.get(1));
+        setDoubleBuffered(true);
     }
+    /**
+     * When the game changes, repaint
+     */
     public synchronized void gameChanged() {
+        repaint();
+    }
+
+    @Override
+    public synchronized void paintComponent(Graphics g) {
+        super.paintComponent(g);
+
+        Graphics2D bufferedGraphics = (Graphics2D) g;
+        bufferedGraphics.setPaint(Color.BLACK);
+        bufferedGraphics.fillRect(0, 0, getWidth(), getHeight());
+
+//        for (String imageName : imageNames)
+//            drawImage(object.getX(), object.getY(), object.getWidth(), object.getHeight(),
+//                    object.getCurrentImageName(), bufferedGraphics);
+
+        bufferedGraphics.setPaint(Color.GREEN);
+        drawString(100, 250, "Remaining Invaders: "+ gameInfo.getRemainInvaders(),
+                15, bufferedGraphics);
+
     }
 
 }

@@ -36,7 +36,7 @@ public class Controller implements KeyListener, ActionListener, GameObserver {
     /**
      * The frame to hold the panel which display the remaining invaders
      */
-    private InvadersCountFrame f;
+    private InvadersCountFrame invadersCountFrame;
 
     /**
      * Create a view object, and have the view display the initial welcome message.
@@ -45,7 +45,6 @@ public class Controller implements KeyListener, ActionListener, GameObserver {
         PropertiesDiskStorage.setFileName("SpaceInvaders.properties");
         view = new View(WIDTH, HEIGHT);
         view.showWelcomeView(this); // this is passed in as an ActionListener
-        f = new InvadersCountFrame();
     }
 
     /**
@@ -68,11 +67,11 @@ public class Controller implements KeyListener, ActionListener, GameObserver {
     public void actionPerformed(ActionEvent event) {
         String actionCommand = event.getActionCommand();
         if (actionCommand.equals("newgame")) {
-            f.setVisible(true);
             Game game = new Game(WIDTH, HEIGHT);
             gameControl = game;
             gameInfo = game;
             gameInfo.addObserver(this); // this is passed in as a GameObserver
+            invadersCountFrame = new InvadersCountFrame(gameInfo);
             view.showNewGameView(gameInfo, this); // this is passed in as a KeyListener
             gameControl.start();
         } else if (actionCommand.equals("savescore")) {
@@ -113,7 +112,6 @@ public class Controller implements KeyListener, ActionListener, GameObserver {
                 break;
             case (KeyEvent.VK_ESCAPE):
                 gameControl.togglePaused();
-                f.setVisible(false);
                 break;
             default:
                 // ignore other keys

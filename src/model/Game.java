@@ -454,7 +454,7 @@ public class Game implements GameControl, GameInfoProvider {
      *
      * @return the number of remaining invaders in the game
      */
-    public int getRemainInvaders(){
-        return this.invadersList.size();
+    public int getRemainInvaders() {
+        return invadersList.size();
     }
 }
